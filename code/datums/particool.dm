@@ -53,11 +53,18 @@ var/list/master_particle_info = list()
 		if(6)
 			return matrix(L[1],L[2],L[3],L[4],L[5],L[6])
 
-/datum/particle_editor/proc/stringToList(str, toNum = FALSE)
+/datum/particle_editor/proc/stringToList(str, toNum = FALSE, restoreNull = FALSE)
 	. = splittext(str,regex(@"(?<!\\),"))
 	if(toNum)
 		for(var/i = 1; i <= length(.); ++i)
-			.[i] = text2num(.[i])
+			.[i] = stringToNum(.[i], restoreNull)
+	if(length(.) == 1 && (isnull(.[1]) || .[1] == ""))
+		. = null
+
+/datum/particle_editor/proc/stringToNum(str, restoreNull = FALSE)
+	. = text2num(str)
+	if(isnull(.) && restoreNull)
+		. = str
 
 /datum/particle_editor/proc/stringToMatrix(str)
 	return ListToMatrix(stringToList(str))
@@ -102,9 +109,11 @@ var/list/master_particle_info = list()
 		if("string") return L["value"]
 		if("float") return L["value"]
 		if("int") return L["value"]
-		if("color") return L["value"]
+		if("vector") return L["value"]
+		if("vector2") return L["value"]
+		if("color") return stringToNum(L["value"], TRUE)
 		if("text") return L["value"]
-		if("list") return stringToList(L["value"])
+		if("list") return stringToList(L["value"], TRUE, TRUE)
 		if("numList") return stringToList(L["value"],TRUE)
 		if("matrix") return ListToMatrix(L["value"])
 		if("generator") return generateGenerator(L["value"]) // This value should be a new list, if it isn't then we will explode
@@ -132,8 +141,8 @@ var/list/master_particle_info = list()
 		if("vector") return generator(L["genType"], a, b)
 		if("box")    return generator(L["genType"], a, b)
 		if("color") //Color can be string or matrix
-			a = length(a) > 1 ? ListToMatrix(a) : a
-			b = length(a) > 1 ? ListToMatrix(b) : b
+			a = length(a) > 1 ? a : L["a"]
+			b = length(a) > 1 ? b : L["b"]
 			return generator(L["genType"], a, b)
 		if("circle") return generator(L["genType"], a, b)
 		if("sphere") return generator(L["genType"], a, b)
@@ -191,7 +200,37 @@ var/list/master_particle_info = list()
 	particles = null
 
 /atom/movable/proc/modify_particle_value(varName, varVal)
+	var/list/default_particle = list(width = 100,
+									height = 100,
+									count = 100,
+									spawning = 1,
+									bound1 = list(-1000, -1000, -1000),
+									bound2 = list(1000, 1000, 1000),
+									icon_state = "",
+									grow = list(0, 0),
+									position = list(0, 0, 0),
+									scale = list(1, 1),
+									velocity = list(0, 0, 0),
+									rotation = 0,
+									spin = 0,
+									friction = list(0, 0, 0),
+									drift = list(0, 0, 0),
+									gravity = list(0, 0, 0),
+									// The following variables either handle null or will evaluate to 0 via Particool
+									// gravity
+									// gradient
+									// transform
+									// lifespan
+									// fade
+									// fadein
+									// icon
+									// color
+									// color_change
+									)
+
 	if(particles)
+		if(isnull(varVal) && !isnull(default_particle[varName]))
+			varVal = default_particle[varName]
 		particles.vars[varName] = varVal
 
 /atom/movable/proc/transition_particle(time, list/new_params, easing, loop)

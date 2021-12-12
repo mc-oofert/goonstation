@@ -2629,13 +2629,13 @@ datum
 				var/turf/location = 0
 				if (holder?.my_atom)
 					location = get_turf(holder.my_atom)
-					fireflash(location, min(max(2,round(created_volume/10)),8)) // This reaction didn't have an upper cap, uh-oh (Convair880).
+					fireflash(location, clamp(round(created_volume/10), 2, 8)) // This reaction didn't have an upper cap, uh-oh (Convair880).
 				else
 					var/amt = max(1, (holder.covered_cache.len * (created_volume / holder.covered_cache_volume)))
 					for (var/i = 0, i < amt && holder.covered_cache.len, i++)
 						location = pick(holder.covered_cache)
 						holder.covered_cache -= location
-						fireflash(location, min(max(2,round(created_volume/10)),8)/amt)
+						fireflash(location, clamp(round(created_volume/10), 2, 8)/amt)
 				return
 
 		napalm_goo
@@ -2671,11 +2671,6 @@ datum
 #ifdef CHEM_REACTION_PRIORITY
 			priority = 9
 #endif
-			on_reaction(var/datum/reagents/holder, var/created_volume)
-				if(holder)
-					holder.del_reagent("potassium")
-					holder.del_reagent("sugar")
-					holder.del_reagent("phosphorus")
 
 		smoke
 			name = "Smoke"
@@ -2693,9 +2688,6 @@ datum
 			on_reaction(var/datum/reagents/holder, var/created_volume) //moved to a proc in Chemistry-Holder.dm so that the instant reaction and powder can use the same proc
 
 				if (holder)
-					holder.del_reagent("potassium")
-					holder.del_reagent("sugar")
-					holder.del_reagent("phosphorus")
 					if(!holder?.my_atom?.is_open_container())
 						if(holder.my_atom)
 							for(var/mob/M in AIviewers(5, get_turf(holder.my_atom)))
@@ -2981,7 +2973,7 @@ datum
 					s.start()
 					holder.clear_reagents()
 				else
-					var/amt = min(max(1,holder.covered_cache.len/100), 10)
+					var/amt = clamp(holder.covered_cache.len/100, 1, 10)
 					for (var/i = 0, i < amt && holder.covered_cache.len, i++)
 						location = pick(holder.covered_cache)
 						holder.covered_cache -= location
@@ -3016,7 +3008,7 @@ datum
 					s.set_up(created_volume/2, location, holder, 1)
 					s.start()
 				else
-					var/amt = min(max(1,holder.covered_cache.len/100), 10)
+					var/amt = clamp(holder.covered_cache.len/100, 1, 10)
 					for (var/i = 0, i < amt && holder.covered_cache.len, i++)
 						location = pick(holder.covered_cache)
 						holder.covered_cache -= location
@@ -3051,7 +3043,7 @@ datum
 					s.set_up(created_volume/2, location, holder, 2)
 					s.start()
 				else
-					var/amt = min(max(1, (holder.covered_cache.len * (created_volume / holder.covered_cache_volume))), 5)
+					var/amt = clamp((holder.covered_cache.len * (created_volume / holder.covered_cache_volume)), 1, 5)
 					for (var/i = 0, i < amt && holder.covered_cache.len, i++)
 						location = pick(holder.covered_cache)
 						holder.covered_cache -= location
