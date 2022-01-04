@@ -6,6 +6,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/medical)
+"aj" = (
+/obj/machinery/door/airlock/pyro/medical/alt,
+/turf/simulated/floor/white,
+/area/station/medical)
 "bk" = (
 /obj/machinery/crusher,
 /obj/machinery/conveyor/east{
@@ -26,6 +30,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/medical)
+"bL" = (
+/obj/machinery/portable_atmospherics/canister/sleeping_agent,
+/turf/simulated/floor/plating,
+/area/station/medical)
 "bO" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/station/medical)
@@ -37,9 +45,44 @@
 /obj/storage/closet/biohazard,
 /turf/simulated/floor/white/checker,
 /area/station/medical)
+"cl" = (
+/obj/rack,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/item/tank/anesthetic,
+/obj/item/clothing/mask/medical,
+/obj/item/clothing/mask/medical,
+/obj/item/clothing/mask/medical,
+/turf/simulated/floor/minitiles/white,
+/area/station/medical)
 "cm" = (
 /turf/space,
 /area/space)
+"cr" = (
+/obj/item/roboupgrade/aware,
+/obj/item/roboupgrade/efficiency,
+/obj/item/roboupgrade/expand,
+/obj/item/roboupgrade/expand,
+/obj/item/roboupgrade/expand,
+/obj/item/roboupgrade/expand,
+/obj/item/roboupgrade/fireshield,
+/obj/item/roboupgrade/healthgoggles,
+/obj/item/roboupgrade/jetpack,
+/obj/item/roboupgrade/opticmeson,
+/obj/item/roboupgrade/physshield,
+/obj/item/roboupgrade/rechargepack,
+/obj/item/roboupgrade/repair,
+/obj/item/roboupgrade/repairpack,
+/obj/item/roboupgrade/sechudgoggles,
+/obj/item/roboupgrade/spectro,
+/obj/item/roboupgrade/speed,
+/obj/item/roboupgrade/teleport,
+/obj/storage/crate,
+/turf/simulated/floor/white,
+/area/station/medical)
 "cM" = (
 /obj/machinery/centrifuge,
 /obj/machinery/light,
@@ -99,9 +142,31 @@
 	},
 /turf/simulated/floor/white/checker,
 /area/station/medical)
+"kl" = (
+/mob/living/silicon/robot/spawnable/heavy,
+/turf/simulated/floor/white,
+/area/station/medical)
 "kr" = (
 /obj/reagent_dispensers/watertank/big,
 /turf/simulated/floor/white/checker,
+/area/station/medical)
+"kN" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/item/material_piece/copper,
+/obj/storage/crate,
+/turf/simulated/floor/white,
 /area/station/medical)
 "lk" = (
 /obj/machinery/conveyor/east{
@@ -109,6 +174,12 @@
 	id = "dispose"
 	},
 /turf/simulated/floor/plating,
+/area/station/medical)
+"lm" = (
+/obj/machinery/door/airlock/pyro/mining{
+	dir = 4
+	},
+/turf/simulated/floor/white,
 /area/station/medical)
 "lP" = (
 /obj/machinery/launcher_loader/east,
@@ -136,6 +207,20 @@
 	dir = 1
 	},
 /turf/simulated/floor/minitiles/white,
+/area/station/medical)
+"nP" = (
+/obj/storage/crate,
+/obj/item/sheet/steel/fullstack,
+/obj/item/sheet/steel/fullstack,
+/obj/item/rods/steel/fullstack,
+/obj/item/rods/steel/fullstack,
+/obj/item/sheet/glass/fullstack,
+/obj/item/sheet/glass/fullstack,
+/turf/simulated/floor/white,
+/area/station/medical)
+"pK" = (
+/obj/machinery/light,
+/turf/simulated/floor/white,
 /area/station/medical)
 "pQ" = (
 /obj/machinery/chemicompiler_stationary,
@@ -185,10 +270,6 @@
 /obj/machinery/power/lgenerator,
 /turf/simulated/floor/plating,
 /area/station/medical)
-"tq" = (
-/obj/cable,
-/turf/space,
-/area/space)
 "tC" = (
 /obj/machinery/door_control{
 	id = "maintenance"
@@ -198,6 +279,15 @@
 "uh" = (
 /obj/machinery/chem_dispenser,
 /turf/simulated/floor/white/checker,
+/area/station/medical)
+"uH" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/white,
+/area/station/medical)
+"uM" = (
+/turf/simulated/floor/white,
 /area/station/medical)
 "uT" = (
 /obj/machinery/light,
@@ -209,6 +299,10 @@
 "uX" = (
 /obj/wingrille_spawn/reinforced_crystal/full,
 /turf/simulated/floor/plating,
+/area/station/medical)
+"vr" = (
+/obj/machinery/manufacturer/medical,
+/turf/simulated/floor/white,
 /area/station/medical)
 "vL" = (
 /obj/machinery/conveyor/east{
@@ -236,6 +330,7 @@
 /obj/storage/crate/freezer/hospital,
 /obj/item/spacecash/million,
 /obj/item/spacecash/million,
+/obj/item/heavy_power_sword,
 /turf/simulated/floor/white/checker,
 /area/station/medical)
 "wT" = (
@@ -254,6 +349,25 @@
 	},
 /turf/simulated/floor/white/checker,
 /area/station/medical)
+"xO" = (
+/obj/machinery/conveyor/west,
+/obj/forcefield/energyshield/perma,
+/turf/simulated/floor/plating,
+/area/station/medical)
+"xS" = (
+/obj/machinery/clone_scanner,
+/turf/simulated/floor/white,
+/area/station/medical)
+"yu" = (
+/obj/machinery/portable_reclaimer,
+/turf/simulated/floor/white,
+/area/station/medical)
+"yB" = (
+/obj/machinery/computer/cloning{
+	dir = 8
+	},
+/turf/simulated/floor/white,
+/area/station/medical)
 "yD" = (
 /obj/machinery/light{
 	dir = 1
@@ -264,6 +378,10 @@
 /obj/table/auto,
 /obj/machinery/microscope,
 /turf/simulated/floor/white/checker,
+/area/station/medical)
+"zC" = (
+/obj/machinery/manufacturer/general,
+/turf/simulated/floor/white,
 /area/station/medical)
 "zL" = (
 /obj/rack,
@@ -286,6 +404,10 @@
 /obj/machinery/autoclave,
 /turf/simulated/floor/white/checker,
 /area/station/medical)
+"AX" = (
+/obj/machinery/conveyor/west,
+/turf/simulated/floor/white,
+/area/station/medical)
 "Bh" = (
 /obj/machinery/door/airlock/pyro/glass{
 	dir = 4
@@ -306,11 +428,23 @@
 /obj/forcefield/energyshield/perma/doorlink,
 /turf/simulated/floor/plating,
 /area/station/medical)
+"BL" = (
+/obj/machinery/manufacturer/hangar,
+/turf/simulated/floor/white,
+/area/station/medical)
+"DA" = (
+/obj/storage/crate/robotics_supplies,
+/turf/simulated/floor/white,
+/area/station/medical)
 "DF" = (
 /obj/machinery/mass_driver{
 	dir = 4;
 	id = 35
 	},
+/turf/simulated/floor/plating,
+/area/station/medical)
+"EA" = (
+/obj/forcefield/energyshield/perma,
 /turf/simulated/floor/plating,
 /area/station/medical)
 "Fo" = (
@@ -322,9 +456,26 @@
 	},
 /turf/simulated/floor/minitiles/white,
 /area/station/medical)
+"Ft" = (
+/obj/item/cloneModule/efficientclone,
+/obj/item/cloneModule/minderaser,
+/obj/item/cloneModule/speedyclone,
+/obj/item/cloner_upgrade,
+/obj/table/reinforced,
+/turf/simulated/floor/white,
+/area/station/medical)
+"GD" = (
+/obj/machinery/door/airlock/pyro/glass{
+	dir = 4
+	},
+/turf/simulated/floor/white,
+/area/station/medical)
 "Hi" = (
 /obj/machinery/atmospherics/pipe/simple{
 	dir = 6
+	},
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/station/medical)
@@ -340,6 +491,10 @@
 /obj/machinery/light,
 /obj/reagent_dispensers/fueltank,
 /turf/simulated/floor/plating,
+/area/station/medical)
+"Jy" = (
+/obj/machinery/computer/supplycomp,
+/turf/simulated/floor/white,
 /area/station/medical)
 "JH" = (
 /obj/cabinet/pathology,
@@ -359,15 +514,34 @@
 "Kt" = (
 /turf/simulated/floor/white/checker,
 /area/station/medical)
+"KR" = (
+/turf/space,
+/area/supply/spawn_point)
 "KW" = (
 /obj/machinery/atmospherics/pipe/manifold/west,
 /turf/simulated/floor/plating,
+/area/station/medical)
+"MA" = (
+/obj/machinery/conveyor/west,
+/turf/space,
+/area/space)
+"MD" = (
+/obj/machinery/clonegrinder,
+/turf/simulated/floor/white,
 /area/station/medical)
 "NZ" = (
 /turf/simulated/wall/auto/reinforced,
 /area/station/medical)
 "Ob" = (
 /obj/machinery/atmospherics/pipe/simple,
+/turf/simulated/floor/plating,
+/area/station/medical)
+"OY" = (
+/obj/machinery/manufacturer/qm,
+/turf/simulated/floor/white,
+/area/station/medical)
+"Pz" = (
+/obj/machinery/atmospherics/pipe/tank/rad_particles/east,
 /turf/simulated/floor/plating,
 /area/station/medical)
 "Qm" = (
@@ -397,6 +571,13 @@
 /obj/table/auto,
 /turf/simulated/floor/white/checker,
 /area/station/medical)
+"QG" = (
+/obj/machinery/computer/stockexchange,
+/turf/simulated/floor/white,
+/area/station/medical)
+"QJ" = (
+/turf/space,
+/area/supply/sell_point)
 "Rc" = (
 /obj/wingrille_spawn/auto/crystal,
 /turf/simulated/floor/white/checker,
@@ -427,6 +608,10 @@
 	},
 /turf/simulated/floor/minitiles/white,
 /area/station/medical)
+"Uf" = (
+/obj/machinery/door/airlock/pyro/maintenance,
+/turf/simulated/floor/plating,
+/area/station/medical)
 "UA" = (
 /obj/item/clothing/suit/bedsheet,
 /obj/stool/bed,
@@ -436,6 +621,18 @@
 /obj/machinery/computer/pathology,
 /turf/simulated/floor/white/checker,
 /area/station/medical)
+"Vn" = (
+/obj/machinery/driver_button{
+	dir = 8;
+	id = "sell";
+	pixel_x = 15
+	},
+/obj/railing/red/reinforced{
+	dir = 1
+	},
+/obj/railing/red/reinforced,
+/turf/simulated/floor/white,
+/area/station/medical)
 "Vq" = (
 /obj/machinery/conveyor/east{
 	id = "dispose"
@@ -443,12 +640,31 @@
 /obj/machinery/light,
 /turf/simulated/floor/minitiles/white,
 /area/station/medical)
+"VF" = (
+/obj/wingrille_spawn/auto/crystal,
+/turf/simulated/floor/white,
+/area/station/medical)
+"VS" = (
+/obj/machinery/clonepod,
+/turf/simulated/floor/white,
+/area/station/medical)
 "Wq" = (
 /turf/simulated/floor/plating,
 /area/station/medical)
 "Wr" = (
 /obj/wingrille_spawn/reinforced_crystal/full,
 /turf/simulated/floor/white/checker,
+/area/station/medical)
+"Wx" = (
+/obj/machinery/mass_driver{
+	dir = 4;
+	id = "sell"
+	},
+/turf/simulated/floor/white,
+/area/station/medical)
+"WD" = (
+/obj/machinery/manufacturer/mining,
+/turf/simulated/floor/white,
 /area/station/medical)
 "WE" = (
 /obj/machinery/atmospherics/pipe/simple{
@@ -483,11 +699,19 @@
 /obj/item_dispenser/medical_mask,
 /turf/simulated/floor/minitiles/white,
 /area/station/medical)
+"Yi" = (
+/obj/machinery/atmospherics/pipe/manifold/east,
+/turf/simulated/floor/plating,
+/area/station/medical)
 "Zi" = (
 /obj/machinery/conveyor/east{
 	id = "dispose"
 	},
 /turf/simulated/floor/minitiles/white,
+/area/station/medical)
+"ZE" = (
+/obj/machinery/manufacturer/robotics,
+/turf/simulated/floor/white,
 /area/station/medical)
 
 (1,1,1) = {"
@@ -41365,13 +41589,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+VF
+VF
+VF
+VF
+VF
+bO
 bO
 bO
 bO
@@ -41667,14 +41891,14 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
 bO
+ZE
+WD
+vr
+BL
+zC
+uM
+Uf
 Wq
 Wq
 Wq
@@ -41684,8 +41908,8 @@ Wq
 Wq
 Wq
 SA
-Wq
-Wq
+bL
+Pz
 Wq
 Wq
 Wq
@@ -41969,13 +42193,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+uH
+uM
+uM
+uM
+uM
+pK
 bO
 Hi
 Ob
@@ -41985,9 +42209,9 @@ Ob
 Ob
 KW
 wT
+Yi
+wT
 pU
-Wq
-Wq
 Wq
 Wq
 Wq
@@ -42271,13 +42495,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+uM
+uM
+uM
+uM
+uM
+uM
 bO
 WE
 bO
@@ -42573,13 +42797,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+kN
+uM
+uM
+uM
+uM
+pK
 bO
 Xk
 UA
@@ -42875,13 +43099,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+nP
+uM
+uM
+uM
+yu
+uM
 bO
 qU
 qU
@@ -43177,13 +43401,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+bO
+VF
+VF
+VF
+bO
+GD
 bO
 At
 Tm
@@ -43479,14 +43703,14 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
 bO
+kl
+uM
+uM
+uM
+kl
+uM
+aj
 qU
 qU
 qU
@@ -43781,15 +44005,15 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
 bO
-ef
+uH
+uM
+uM
+uM
+uM
+pK
+bO
+cl
 qU
 qU
 qU
@@ -44083,14 +44307,14 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
 bO
+kl
+uM
+uM
+uM
+uM
+uM
+aj
 XY
 qU
 qU
@@ -44385,13 +44609,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+DA
+uM
+MD
+yB
+xS
+uM
 bO
 Xx
 Xx
@@ -44687,13 +44911,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+cr
+uM
+Ft
+VS
+uM
+uM
 bO
 ny
 Zi
@@ -44989,13 +45213,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+bO
+VF
+VF
+VF
+bO
+lm
 bO
 Zi
 Zi
@@ -45291,13 +45515,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+uM
+uM
+uM
+uM
+uM
+uM
 bO
 Zi
 Zi
@@ -45593,13 +45817,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+Jy
+uM
+uM
+uM
+uM
+uM
 bO
 ny
 Zi
@@ -45895,13 +46119,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+QG
+uM
+uM
+uM
+uM
+uM
 bO
 Fo
 Fo
@@ -46197,13 +46421,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+uH
+uM
+uM
+uM
+uM
+pK
 bO
 bk
 bk
@@ -46499,13 +46723,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+OY
+AX
+Vn
+Wx
+uM
+uM
 bO
 lk
 lk
@@ -46801,13 +47025,13 @@ cm
 cm
 cm
 cm
-cm
-cm
-cm
-cm
-cm
-cm
-cm
+bO
+bO
+xO
+bO
+EA
+bO
+bO
 bO
 bO
 bO
@@ -47105,7 +47329,7 @@ cm
 cm
 cm
 cm
-cm
+MA
 cm
 cm
 cm
@@ -47407,7 +47631,7 @@ cm
 cm
 cm
 cm
-cm
+MA
 cm
 cm
 cm
@@ -47709,7 +47933,7 @@ cm
 cm
 cm
 cm
-cm
+MA
 cm
 cm
 cm
@@ -48333,7 +48557,7 @@ cm
 cm
 cm
 cm
-tq
+cm
 cm
 cm
 cm
@@ -58279,9 +58503,9 @@ cm
 cm
 cm
 cm
+KR
 cm
-cm
-cm
+QJ
 cm
 cm
 cm
